@@ -5,8 +5,10 @@ inputs:
     description: 'Local file to recover version information from'
     required: true
 outputs:
-  timestamp:
-    value: "${{ fromJson(steps.parse_file.outputs.json).timestamp }}"
+  global_cache_index:
+    value: "${{ fromJson(steps.parse_file.outputs.json).global_cache_index }}"
+  docker_timestamp:
+    value: "${{ fromJson(steps.parse_file.outputs.json).docker_timestamp }}"
   alembic_version:
     value: "${{ fromJson(steps.parse_file.outputs.json).versions.alembic }}"
   alembic_min_version:
