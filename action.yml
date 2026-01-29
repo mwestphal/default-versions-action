@@ -71,6 +71,8 @@ outputs:
     value: "${{ fromJson(steps.parse_file.outputs.json).min_versions.webp }}"
   webifc_version:
     value: "${{ fromJson(steps.parse_file.outputs.json).versions.webifc }}"
+  webifc_min_version:
+    value: "${{ fromJson(steps.parse_file.outputs.json).min_versions.webifc }}"
   zlib_version:
     value: "${{ fromJson(steps.parse_file.outputs.json).versions.zlib }}"
   zlib_min_version:
