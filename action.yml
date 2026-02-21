@@ -21,6 +21,10 @@ outputs:
     value: "${{ fromJson(steps.parse_file.outputs.json).versions.blosc }}"
   blosc_min_version:
     value: "${{ fromJson(steps.parse_file.outputs.json).min_versions.blosc }}"
+  clip_version:
+    value: "${{ fromJson(steps.parse_file.outputs.json).versions.clip }}"
+  clip_min_version:
+    value: "${{ fromJson(steps.parse_file.outputs.json).min_versions.clip }}"
   draco_version:
     value: "${{ fromJson(steps.parse_file.outputs.json).versions.draco }}"
   draco_min_version:
