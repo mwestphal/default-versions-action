@@ -21,10 +21,22 @@ outputs:
     value: "${{ fromJson(steps.parse_file.outputs.json).versions.blosc }}"
   blosc_min_version:
     value: "${{ fromJson(steps.parse_file.outputs.json).min_versions.blosc }}"
+  curl_version:
+    value: "${{ fromJson(steps.parse_file.outputs.json).versions.curl }}"
+  curl_min_version:
+    value: "${{ fromJson(steps.parse_file.outputs.json).min_versions.curl }}"
   draco_version:
     value: "${{ fromJson(steps.parse_file.outputs.json).versions.draco }}"
   draco_min_version:
     value: "${{ fromJson(steps.parse_file.outputs.json).min_versions.draco }}"
+  gdal_version:
+    value: "${{ fromJson(steps.parse_file.outputs.json).versions.gdal }}"
+  gdal_min_version:
+    value: "${{ fromJson(steps.parse_file.outputs.json).min_versions.gdal }}"
+  geotiff_version:
+    value: "${{ fromJson(steps.parse_file.outputs.json).versions.geotiff }}"
+  geotiff_min_version:
+    value: "${{ fromJson(steps.parse_file.outputs.json).min_versions.geotiff }}"
   imath_version:
     value: "${{ fromJson(steps.parse_file.outputs.json).versions.imath }}"
   imath_min_version:
@@ -49,6 +61,14 @@ outputs:
     value: "${{ fromJson(steps.parse_file.outputs.json).versions.ospray }}"
   ospray_min_version:
     value: "${{ fromJson(steps.parse_file.outputs.json).min_versions.ospray }}"
+  pdal_version:
+    value: "${{ fromJson(steps.parse_file.outputs.json).versions.pdal }}"
+  pdal_min_version:
+    value: "${{ fromJson(steps.parse_file.outputs.json).min_versions.pdal }}"
+  proj_version:
+    value: "${{ fromJson(steps.parse_file.outputs.json).versions.proj }}"
+  proj_min_version:
+    value: "${{ fromJson(steps.parse_file.outputs.json).min_versions.proj }}"
   pybind11_version:
     value: "${{ fromJson(steps.parse_file.outputs.json).versions.pybind11 }}"
   pybind11_min_version:
@@ -57,10 +77,18 @@ outputs:
     value: "${{ fromJson(steps.parse_file.outputs.json).versions.python }}"
   python_min_version:
     value: "${{ fromJson(steps.parse_file.outputs.json).min_versions.python }}"
+  sqlite_csb_version:
+    value: "${{ fromJson(steps.parse_file.outputs.json).versions.sqlite_csb }}"
+  sqlite_csb_min_version:
+    value: "${{ fromJson(steps.parse_file.outputs.json).min_versions.sqlite_csb }}"
   tbb_version:
     value: "${{ fromJson(steps.parse_file.outputs.json).versions.tbb }}"
   tbb_min_version:
     value: "${{ fromJson(steps.parse_file.outputs.json).min_versions.tbb }}"
+  tiff_version:
+    value: "${{ fromJson(steps.parse_file.outputs.json).versions.tiff }}"
+  tiff_min_version:
+    value: "${{ fromJson(steps.parse_file.outputs.json).min_versions.tiff }}"
   usd_version:
     value: "${{ fromJson(steps.parse_file.outputs.json).versions.usd }}"
   usd_min_version:
